@@ -1,0 +1,202 @@
+[
+    {
+        "enonce": "Un filtre linéaire et invariant dans le temps (LTI) vérifie :",
+        "possibilites": [
+            "A) Seulement la linéarité",
+            "B) Seulement l'invariance temporelle",
+            "C) Linéarité et invariance temporelle",
+            "D) Aucune des réponses ci-dessus"
+        ],
+        "bonne_reponse": 3
+    },
+    {
+        "enonce": "La réponse impulsionnelle $ h(t) $ d'un filtre est obtenue en appliquant :",
+        "possibilites": [
+            "A) Un échelon unitaire $ u(t) $",
+            "B) Une impulsion de Dirac $ \\delta(t) $",
+            "C) Un signal sinusoïdal",
+            "D) Un signal carré"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Dans le domaine fréquentiel, la sortie $ Y(\\nu) $ d'un filtre LTI s'exprime par :",
+        "possibilites": [
+            "A) $ Y(\\nu) = X(\\nu) + H(\\nu) $",
+            "B) $ Y(\\nu) = H(\\nu) \\cdot X(\\nu) $",
+            "C) $ Y(\\nu) = H(\\nu) / X(\\nu) $",
+            "D) $ Y(\\nu) = X(\\nu) * H(\\nu) $"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "À la fréquence $ \\nu = 0 $, une inductance $ L $ se comporte comme :",
+        "possibilites": [
+            "A) Un circuit ouvert",
+            "B) Un court-circuit",
+            "C) Une résistance $ R = L $",
+            "D) Aucune des réponses ci-dessus"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Pour un signal carré de période $ T $ et rapport cyclique 50%, le coefficient $ c_0 $ de Fourier vaut :",
+        "possibilites": [
+            "A) $ V_{10} $",
+            "B) $ V_{10}/2 $",
+            "C) $ 0 $",
+            "D) $ V_{10}/4 $"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "La fonction de transfert $ H(\\nu) $ d'un filtre représente :",
+        "possibilites": [
+            "A) La réponse en phase uniquement",
+            "B) Le gain en fréquence uniquement",
+            "C) Le gain complexe en fréquence",
+            "D) La réponse impulsionnelle"
+        ],
+        "bonne_reponse": 3
+    },
+    {
+        "enonce": "Si $ h(t) $ est la réponse impulsionnelle d'un filtre, la sortie $ y(t) $ s'obtient par :",
+        "possibilites": [
+            "A) $ y(t) = h(t) + x(t) $",
+            "B) $ y(t) = h(t) \\cdot x(t) $",
+            "C) $ y(t) = h(t) * x(t) $",
+            "D) $ y(t) = h(t) / x(t) $"
+        ],
+        "bonne_reponse": 3
+    },
+    {
+        "enonce": "Un filtre passe-bas atténue principalement :",
+        "possibilites": [
+            "A) Les basses fréquences",
+            "B) Les hautes fréquences",
+            "C) Toutes les fréquences",
+            "D) Aucune fréquence"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "L'impédance d'une capacité $ C $ à la fréquence $ \\nu $ est :",
+        "possibilites": [
+            "A) $ Z_C = jC\\omega $",
+            "B) $ Z_C = \\frac{1}{jC\\omega} $",
+            "C) $ Z_C = C\\omega $",
+            "D) $ Z_C = \\frac{1}{C\\omega} $"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Pour $ \\nu = 1/T $, où $ T = 20\\ \\mu s $, la fréquence correspondante est :",
+        "possibilites": [
+            "A) 10 kHz",
+            "B) 50 kHz",
+            "C) 100 kHz",
+            "D) 5 kHz"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "La linéarité d'un filtre implique que :",
+        "possibilites": [
+            "A) $ x(t - \\tau) \\rightarrow y(t - \\tau) $",
+            "B) $ a x_1(t) + b x_2(t) \\rightarrow a y_1(t) + b y_2(t) $",
+            "C) La réponse ne dépend pas du temps",
+            "D) Aucune des réponses ci-dessus"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Si $ H(50\\ kHz) = 0.5 $, une composante d'entrée $ c_n = 10 $ à cette fréquence donne en sortie :",
+        "possibilites": [
+            "A) 5",
+            "B) 10",
+            "C) 20",
+            "D) 0"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "La transformée de Fourier de la réponse impulsionnelle $ h(t) $ est :",
+        "possibilites": [
+            "A) Le gain en phase",
+            "B) La fonction de transfert $ H(\\nu) $",
+            "C) Le spectre du signal d'entrée",
+            "D) Aucune des réponses ci-dessus"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Dans un filtre RLC série, à la résonance, l'impédance totale est :",
+        "possibilites": [
+            "A) Maximale",
+            "B) Minimale",
+            "C) Nulle",
+            "D) Infinite"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Le module de $ H(\\nu) $ représente :",
+        "possibilites": [
+            "A) Le déphasage",
+            "B) Le gain en amplitude",
+            "C) La réponse impulsionnelle",
+            "D) La linéarité"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Un signal $ x(t) = \\delta(t - 5) $ traverse un filtre LTI de réponse $ h(t) $. La sortie est :",
+        "possibilites": [
+            "A) $ h(t - 5) $",
+            "B) $ h(t) * \\delta(t - 5) $",
+            "C) $ h(t + 5) $",
+            "D) $ h(5) $"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Pour un filtre passe-haut, les composantes continues ($ \\nu = 0 $) sont :",
+        "possibilites": [
+            "A) Amplifiées",
+            "B) Conservées",
+            "C) Supprimées",
+            "D) Aucune des réponses ci-dessus"
+        ],
+        "bonne_reponse": 3
+    },
+    {
+        "enonce": "Le coefficient $ c_1 $ de Fourier d'un signal carré de période $ T $ avec $ V_{10} = 20 $ est :",
+        "possibilites": [
+            "A) $ \\frac{20}{\\pi} $",
+            "B) $ \\frac{10}{\\pi} $",
+            "C) $ \\frac{20}{\\pi^2} $",
+            "D) $ 0 $"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Si $ H(\\nu) = 0 $ à une fréquence donnée, la composante correspondante en sortie est :",
+        "possibilites": [
+            "A) Doublée",
+            "B) Inchangée",
+            "C) Supprimée",
+            "D) Aucune des réponses ci-dessus"
+        ],
+        "bonne_reponse": 3
+    },
+    {
+        "enonce": "Un filtre invariant dans le temps vérifie :",
+        "possibilites": [
+            "A) $ x(t) \\rightarrow y(t) \\Rightarrow x(t - \\tau) \\rightarrow y(t - \\tau) $",
+            "B) $ x(t) + y(t) \\rightarrow x(t) * y(t) $",
+            "C) La réponse dépend de l'instant d'application",
+            "D) Aucune des réponses ci-dessus"
+        ],
+        "bonne_reponse": 1
+    }
+]

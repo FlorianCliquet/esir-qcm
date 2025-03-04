@@ -1,0 +1,192 @@
+[
+    {
+      "enonce": "Quelle est l'expression de la Transformée de Fourier (TF) d'un signal $ x(t) $ ?",
+      "possibilites": [
+        "$ \\int_{-\\infty}^{+\\infty} x(t)e^{-i2\\pi\\nu t}dt $",
+        "$ \\int_{-\\infty}^{+\\infty} x(t)e^{i2\\pi\\nu t}dt $",
+        "$ \\int_{0}^{T} x(t)e^{-i2\\pi\\nu t}dt $",
+        "$ \\sum_{n=-\\infty}^{+\\infty} c_n e^{i\\omega_n t} $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Que devient la TF de $ x(t - t_0) $ ?",
+      "possibilites": [
+        "$ X(\\nu) e^{i2\\pi\\nu t_0} $",
+        "$ X(\\nu) e^{-i2\\pi\\nu t_0} $",
+        "$ X(\\nu - t_0) $",
+        "$ X(\\nu + t_0) $"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est la TF de $ \\delta(t) $ ?",
+      "possibilites": ["1", "$ \\delta(\\nu) $", "$ \\text{sinc}(\\pi\\nu) $", "$ e^{-i2\\pi\\nu} $"],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Si $ x(t) $ est réelle et paire, quelle propriété vérifie $ X(\\nu) $ ?",
+      "possibilites": [
+        "Imaginaire pure et impaire",
+        "Réelle et paire",
+        "Complexe quelconque",
+        "Nulle pour $ \\nu > 0 $"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est la TF de $ \\cos(2\\pi\\nu_0 t) $ ?",
+      "possibilites": [
+        "$ \\frac{1}{2}[\\delta(\\nu - \\nu_0) + \\delta(\\nu + \\nu_0)] $",
+        "$ \\frac{1}{2i}[\\delta(\\nu - \\nu_0) - \\delta(\\nu + \\nu_0)] $",
+        "$ \\delta(\\nu - \\nu_0) $",
+        "$ \\text{sinc}(\\pi\\nu T) $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Que vaut $ x(t) * \\delta(t - t_0) $ ?",
+      "possibilites": [
+        "$ x(t - t_0) $",
+        "$ x(t + t_0) $",
+        "$ x(t) $",
+        "$ \\delta(t - t_0) $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle propriété lie la convolution temporelle à la TF ?",
+      "possibilites": [
+        "$ x(t) * y(t) \\rightleftharpoons X(\\nu) + Y(\\nu) $",
+        "$ x(t) * y(t) \\rightleftharpoons X(\\nu)Y(\\nu) $",
+        "$ x(t) * y(t) \\rightleftharpoons X(\\nu)/Y(\\nu) $",
+        "Aucune de ces réponses"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Si $ x(t) \\rightleftharpoons X(\\nu) $, que vaut la TF de $ x'(t) $ ?",
+      "possibilites": [
+        "$ (i2\\pi\\nu) X(\\nu) $",
+        "$ (-i2\\pi\\nu) X(\\nu) $",
+        "$ X(\\nu)/\\nu $",
+        "$ X(\\nu) e^{i2\\pi\\nu} $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle est la TF du peigne de Dirac $ \\sum_{n=-\\infty}^{+\\infty} \\delta(t - n\\theta) $ ?",
+      "possibilites": [
+        "$ \\frac{1}{\\theta} \\sum_{n=-\\infty}^{+\\infty} \\delta\\left(\\nu - \\frac{n}{\\theta}\\right) $",
+        "$ \\sum_{n=-\\infty}^{+\\infty} \\delta(\\nu - n\\theta) $",
+        "$ \\theta \\sum_{n=-\\infty}^{+\\infty} \\delta(\\nu - n\\theta) $",
+        "$ \\text{sinc}(\\pi\\nu\\theta) $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Que stipule la relation de Bessel-Parseval ?",
+      "possibilites": [
+        "Conservation de l'énergie : $ \\int |x(t)|^2 dt = \\int |X(\\nu)|^2 d\\nu $",
+        "Linéarité de la TF",
+        "Symétrie hermitienne",
+        "Aucune de ces réponses"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Si $ X(\\nu) $ est la TF de $ x(t) $, que vaut la TF inverse de $ X(\\nu) $ ?",
+      "possibilites": [
+        "$ \\int_{-\\infty}^{+\\infty} X(\\nu)e^{i2\\pi\\nu t}d\\nu $",
+        "$ \\int_{0}^{+\\infty} X(\\nu)e^{-i2\\pi\\nu t}d\\nu $",
+        "$ \\sum_{n=-\\infty}^{+\\infty} X(\\nu)e^{i2\\pi\\nu t} $",
+        "$ x(-t) $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle est la TF de la fonction fenêtre rectangulaire $ \\Pi_T(t) $ ?",
+      "possibilites": [
+        "$ T \\cdot \\text{sinc}(\\pi\\nu T) $",
+        "$ \\delta(\\nu) $",
+        "$ \\frac{1}{T} \\text{sinc}(\\pi\\nu T) $",
+        "$ e^{-i2\\pi\\nu T} $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Que vaut la TF de $ e^{i2\\pi\\nu_0 t} x(t) $ ?",
+      "possibilites": [
+        "$ X(\\nu - \\nu_0) $",
+        "$ X(\\nu + \\nu_0) $",
+        "$ X(\\nu) e^{i2\\pi\\nu_0 t} $",
+        "$ X(\\nu)/\\nu_0 $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Si $ x(t) $ est impaire et réelle, $ X(\\nu) $ est :",
+      "possibilites": [
+        "Imaginaire pure et impaire",
+        "Réelle et paire",
+        "Complexe quelconque",
+        "Nulle pour $ \\nu > 0 $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Que vaut $ \\text{TF}^{-1}\\{\\delta(\\nu)\\} $ ?",
+      "possibilites": ["1", "$ \\delta(t) $", "$ e^{i2\\pi\\nu t} $", "$ \\cos(2\\pi\\nu t) $"],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Si $ x(t) \\rightleftharpoons X(\\nu) $, que vaut la TF de $ x(-t) $ ?",
+      "possibilites": [
+        "$ X(-\\nu) $",
+        "$ X(\\nu) $",
+        "$ \\overline{X(\\nu)} $",
+        "$ X(\\nu) e^{-i2\\pi\\nu} $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle est la TF de $ \\text{sgn}(t) $ ?",
+      "possibilites": [
+        "$ \\frac{1}{i\\pi} \\text{vp}\\left(\\frac{1}{\\nu}\\right) $",
+        "$ \\delta(\\nu) $",
+        "$ \\frac{1}{\\nu} $",
+        "$ \\text{sinc}(\\pi\\nu) $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Que vaut la TF de $ x(at) $ pour $ a \\neq 0 $ ?",
+      "possibilites": [
+        "$ \\frac{1}{|a|} X\\left(\\frac{\\nu}{a}\\right) $",
+        "$ X(a\\nu) $",
+        "$ |a| X(a\\nu) $",
+        "$ X\\left(\\frac{\\nu}{a}\\right) $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Si $ x(t) $ est sommable, que peut-on dire de $ X(\\nu) $ lorsque $ |\\nu| \\to \\infty $ ?",
+      "possibilites": [
+        "$ X(\\nu) \\to 0 $",
+        "$ X(\\nu) \\to 1 $",
+        "$ X(\\nu) $ diverge",
+        "$ X(\\nu) $ est périodique"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle est la TF de $ \\sin(2\\pi\\nu_0 t) $ ?",
+      "possibilites": [
+        "$ \\frac{1}{2i}[\\delta(\\nu - \\nu_0) - \\delta(\\nu + \\nu_0)] $",
+        "$ \\frac{1}{2}[\\delta(\\nu - \\nu_0) + \\delta(\\nu + \\nu_0)] $",
+        "$ \\delta(\\nu - \\nu_0) $",
+        "$ -\\delta(\\nu + \\nu_0) $"
+      ],
+      "bonne_reponse": 0
+    }
+  ]

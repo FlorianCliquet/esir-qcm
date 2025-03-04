@@ -1,0 +1,202 @@
+[
+    {
+      "enonce": "Quelle est l'expression de la série de Fourier sous forme trigonométrique réelle ?",
+      "possibilites": [
+        "$a_0 + \\sum_{n=1}^{\\infty} a_n \\cos(n\\omega t)$",
+        "$a_0 + \\sum_{n=1}^{\\infty} (a_n \\cos(n\\omega t) + b_n \\sin(n\\omega t))$",
+        "$\\sum_{n=-\\infty}^{\\infty} c_n e^{in\\omega t}$",
+        "$a_0 + \\sum_{n=1}^{\\infty} b_n \\sin(n\\omega t)$"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Que stipule le lemme de Riemann-Lebesgue pour une fonction sommable ?",
+      "possibilites": [
+        "Les coefficients $c_n$ divergent lorsque $|n| \\to \\infty$",
+        "$\\lim_{|n| \\to \\infty} c_n = 0$",
+        "La série converge uniformément",
+        "Les $a_n$ et $b_n$ sont nuls"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Si $f$ est une fonction impaire, que peut-on dire de ses coefficients de Fourier ?",
+      "possibilites": [
+        "$a_n = 0$ pour tout $n$",
+        "$b_n = 0$ pour tout $n$",
+        "$c_n = c_{-n}$",
+        "$a_0 = 0$"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle est la valeur moyenne d'un signal créneau décomposé en série de Fourier ?",
+      "possibilites": [
+        "$\\frac{4A}{\\pi}$",
+        "$0$",
+        "$A$",
+        "$\\frac{2A}{\\pi}$"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle propriété vérifient les coefficients $c_n$ d'un signal réel ?",
+      "possibilites": [
+        "$c_{-n} = -c_n$",
+        "$c_{-n} = \\overline{c_n}$",
+        "$c_n$ sont tous réels",
+        "$c_n = c_{-n}$"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Que représente $\\sqrt{a_n^2 + b_n^2}$ dans la forme trigonométrique réelle ?",
+      "possibilites": [
+        "La phase de l'harmonique",
+        "L'amplitude de l'harmonique",
+        "La valeur moyenne",
+        "La pulsation"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est l'expression correcte de $c_n$ pour un signal $s(t)$ de période $T$ ?",
+      "possibilites": [
+        "$c_n = \\frac{1}{T} \\int_0^T s(t) e^{in\\omega t} dt$",
+        "$c_n = \\frac{2}{T} \\int_0^T s(t) \\cos(n\\omega t) dt$",
+        "$c_n = \\frac{1}{T} \\int_0^T s(t) e^{-in\\omega t} dt$",
+        "$c_n = \\frac{2}{T} \\int_0^T s(t) \\sin(n\\omega t) dt$"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "enonce": "Quel phénomène observe-t-on près des discontinuités d'un signal reconstruit avec des harmoniques limitées ?",
+      "possibilites": [
+        "Convergence uniforme",
+        "Phénomène de Gibbs",
+        "Ondulation de Nyquist",
+        "Aliasing"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle condition garantit la convergence simple de la série de Fourier vers $f(t)$ en un point $t$ ?",
+      "possibilites": [
+        "$f$ est continue partout",
+        "$f$ admet des limites et dérivées à gauche/droite finies en $t$",
+        "$f$ est périodique",
+        "$f$ est sommable"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Que vaut $a_0$ pour un signal sinusoïdal redressé double alternance ?",
+      "possibilites": [
+        "$\\frac{4}{\\pi}$",
+        "$\\frac{2}{\\pi}$",
+        "$0$",
+        "$\\frac{1}{\\pi}$"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est l'interprétation de l'identité de Parseval ?",
+      "possibilites": [
+        "Équivalence énergie temps-fréquence",
+        "Convergence uniforme",
+        "Orthogonalité des harmoniques",
+        "Linéarité des coefficients"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle est la base orthonormée de $L^2(0,T)$ pour les séries de Fourier ?",
+      "possibilites": [
+        "$\\cos(n\\omega t)$",
+        "$e^{in\\omega t}$ avec $n \\in \\mathbb{Z}$",
+        "$\\sin(n\\omega t)$",
+        "$t^n$ avec $n \\in \\mathbb{N}$"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Que dit le théorème de Fejer ?",
+      "possibilites": [
+        "Convergence uniforme pour les fonctions continues",
+        "Divergence des séries non sommables",
+        "Existence des coefficients $c_n$",
+        "Approximation polynomiale"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Si $f$ est paire, que vaut $b_n$ ?",
+      "possibilites": [
+        "$b_n = 0$",
+        "$b_n = 2c_n$",
+        "$b_n = i(c_n - c_{-n})$",
+        "$b_n = a_n$"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle relation lie $a_n$, $b_n$ et $c_n$ pour $n \\geq 1$ ?",
+      "possibilites": [
+        "$c_n = a_n + ib_n$",
+        "$c_n = \\frac{1}{2}(a_n - ib_n)$",
+        "$c_n = \\frac{1}{2}(a_n + ib_n)$",
+        "$c_n = a_n - b_n$"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est la période du signal $y(t) = |\\sin(2\\pi t / \\tau)|$ ?",
+      "possibilites": [
+        "$\\tau$",
+        "$\\tau/2$",
+        "$2\\tau$",
+        "$\\tau^2$"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle inégalité garantit $\\sum |c_n|^2 \\leq \\|f\\|^2$ ?",
+      "possibilites": [
+        "Parseval",
+        "Bessel",
+        "Schwarz",
+        "Dirichlet"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Que vaut $\\int_a^{a+T} g(t) dt$ si $g$ est $T$-périodique ?",
+      "possibilites": [
+        "$\\int_0^T g(t) dt$",
+        "$0$",
+        "$T \\cdot g(a)$",
+        "$\\int_a^T g(t) dt$"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle propriété définit un espace de Hilbert ?",
+      "possibilites": [
+        "Complet et normé par un produit scalaire",
+        "De dimension finie",
+        "Uniquement des fonctions continues",
+        "Base orthogonale finie"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Combien d'harmoniques impaires sont présentes dans la décomposition d'un créneau ?",
+      "possibilites": [
+        "Toutes",
+        "Aucune",
+        "Uniquement la fondamentale",
+        "Uniquement les paires"
+      ],
+      "bonne_reponse": 0
+    }
+  ]

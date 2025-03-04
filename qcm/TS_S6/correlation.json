@@ -1,0 +1,202 @@
+[
+    {
+        "enonce": "Quelle est la définition de la convolution entre deux signaux $ f $ et $ g $ ?",
+        "possibilites": [
+            "$\\int f(\\tau)g(\\tau - t) \\, d\\tau$",
+            "$\\int f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int f(t - \\tau)g(\\tau) \\, d\\tau$",
+            "$\\int f(\\tau)g(\\tau) \\, d\\tau$"
+        ],
+        "bonne_reponse": "$\\int f(\\tau)g(t - \\tau) \\, d\\tau$"
+    },
+    {
+        "enonce": "Laquelle de ces propriétés n'est PAS une propriété de la convolution ?",
+        "possibilites": [
+            "Commutativité",
+            "Associativité",
+            "Distributivité",
+            "Élément neutre $ \\delta(t - \\tau) $"
+        ],
+        "bonne_reponse": "Élément neutre $ \\delta(t - \\tau) $"
+    },
+    {
+        "enonce": "Si $ f $ est nulle hors de $[-1, 1]$ et $ g $ hors de $[0, 3]$, quel est le support de $ f * g $ ?",
+        "possibilites": [
+            "$[-1, 3]$",
+            "$[0, 4]$",
+            "$[-1, 4]$",
+            "$[0, 3]$"
+        ],
+        "bonne_reponse": "$[-1, 4]$"
+    },
+    {
+        "enonce": "Que vaut $ x(t) * \\delta(t - \\tau) $ ?",
+        "possibilites": [
+            "$ x(t - \\tau) $",
+            "$ x(\\tau - t) $",
+            "$ x(t) $",
+            "$ \\delta(t - \\tau) $"
+        ],
+        "bonne_reponse": "$ x(t - \\tau) $"
+    },
+    {
+        "enonce": "Quelle est la première étape de la méthode de calcul de la convolution ?",
+        "possibilites": [
+            "Retourner un des signaux",
+            "Décaler le signal",
+            "Multiplier les signaux",
+            "Intégrer"
+        ],
+        "bonne_reponse": "Retourner un des signaux"
+    },
+    {
+        "enonce": "Que vaut $ \\delta(t) * x(t) $ ?",
+        "possibilites": [
+            "$ x(t) $",
+            "$ \\delta(t) $",
+            "$ x(0) $",
+            "0"
+        ],
+        "bonne_reponse": "$ x(t) $"
+    },
+    {
+        "enonce": "Si $ f $ et $ g $ sont causales, quelle est l'expression de leur convolution ?",
+        "possibilites": [
+            "$\\int_{0}^{t} f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int_{-\\infty}^{t} f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int_{-\\infty}^{+\\infty} f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int_{0}^{3} f(\\tau)g(t - \\tau) \\, d\\tau$"
+        ],
+        "bonne_reponse": "$\\int_{0}^{t} f(\\tau)g(t - \\tau) \\, d\\tau$"
+    },
+    {
+        "enonce": "Quelle opération permet de retarder un signal $ x(t) $ de $ \\tau $ ?",
+        "possibilites": [
+            "$ x(t) * \\delta(t) $",
+            "$ x(t) * \\delta(t - \\tau) $",
+            "$ x(t) * \\delta(\\tau - t) $",
+            "$ x(t) * \\delta(-t) $"
+        ],
+        "bonne_reponse": "$ x(t) * \\delta(t - \\tau) $"
+    },
+    {
+        "enonce": "Quelle est la définition de l'intercorrélation entre $ f $ et $ g $ ?",
+        "possibilites": [
+            "$\\int f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int f(\\tau)g(\\tau - t) \\, d\\tau$",
+            "$\\int f(t - \\tau)g(\\tau) \\, d\\tau$",
+            "$\\int f(\\tau)g(\\tau) \\, d\\tau$"
+        ],
+        "bonne_reponse": "$\\int f(\\tau)g(\\tau - t) \\, d\\tau$"
+    },
+    {
+        "enonce": "Quelle relation lie l'intercorrélation et la convolution ?",
+        "possibilites": [
+            "$ C_{f,g}(t) = f(t) * g(t) $",
+            "$ C_{f,g}(t) = f(t) * g(-t) $",
+            "$ C_{f,g}(t) = f(-t) * g(t) $",
+            "$ C_{f,g}(t) = f(t) * g^*(-t) $"
+        ],
+        "bonne_reponse": "$ C_{f,g}(t) = f(t) * g^*(-t) $"
+    },
+    {
+        "enonce": "Quelle est la propriété de l'autocorrélation d'un signal réel $ f $ ?",
+        "possibilites": [
+            "$ C_f(t) = C_f(-t) $",
+            "$ C_f(t) = -C_f(-t) $",
+            "$ C_f(t) = C_f(t - \\tau) $",
+            "$ C_f(t) = 0 $"
+        ],
+        "bonne_reponse": "$ C_f(t) = C_f(-t) $"
+    },
+    {
+        "enonce": "Parmi ces applications, laquelle utilise la corrélation ?",
+        "possibilites": [
+            "Filtrage linéaire",
+            "Synthèse de Fourier",
+            "Extraction d'un signal dans le bruit",
+            "Modulation d'amplitude"
+        ],
+        "bonne_reponse": "Extraction d'un signal dans le bruit"
+    },
+    {
+        "enonce": "La convolution est-elle commutative ?",
+        "possibilites": [
+            "Oui, toujours",
+            "Non, jamais",
+            "Seulement pour les signaux causaux",
+            "Seulement en discret"
+        ],
+        "bonne_reponse": "Oui, toujours"
+    },
+    {
+        "enonce": "Quelle est la différence principale entre convolution et corrélation ?",
+        "possibilites": [
+            "La convolution utilise un retournement, pas la corrélation",
+            "La corrélation utilise un retournement, pas la convolution",
+            "Aucune différence",
+            "La convolution est commutative"
+        ],
+        "bonne_reponse": "La convolution utilise un retournement, pas la corrélation"
+    },
+    {
+        "enonce": "Quelle méthode alternative permet de calculer la convolution en utilisant la dérivée ?",
+        "possibilites": [
+            "Intégrer la dérivée de $ f * g $",
+            "Dériver $ f $ puis convoluer avec $ g $",
+            "Utiliser $ h'(t) = \\left( \\frac{df}{dt} * g \\right)(t) $",
+            "Intégrer $ h' $ à partir de $ h(a) $"
+        ],
+        "bonne_reponse": "Utiliser $ h'(t) = \\left( \\frac{df}{dt} * g \\right)(t) $"
+    },
+    {
+        "enonce": "Quelle propriété a la fonction $ \\delta(t) $ dans la convolution ?",
+        "possibilites": [
+            "Élément absorbant",
+            "Élément neutre",
+            "Inverse",
+            "Nulle"
+        ],
+        "bonne_reponse": "Élément neutre"
+    },
+    {
+        "enonce": "Que mesure l'autocorrélation d'un signal ?",
+        "possibilites": [
+            "Sa similarité avec un autre signal",
+            "Sa similarité avec lui-même décalé",
+            "Son énergie",
+            "Sa fréquence"
+        ],
+        "bonne_reponse": "Sa similarité avec lui-même décalé"
+    },
+    {
+        "enonce": "Dans la convolution, que devient le support des signaux ?",
+        "possibilites": [
+            "Il est le même que le signal le plus long",
+            "Il est la somme des intervalles",
+            "Il est l'intersection des intervalles",
+            "Il est le produit des intervalles"
+        ],
+        "bonne_reponse": "Il est la somme des intervalles"
+    },
+    {
+        "enonce": "Lors du calcul de la convolution, après avoir retourné un signal, quelle est l'étape suivante ?",
+        "possibilites": [
+            "Le décaler",
+            "Le multiplier par l'autre signal",
+            "Intégrer",
+            "Dériver"
+        ],
+        "bonne_reponse": "Le décaler"
+    },
+    {
+        "enonce": "Quelle est la valeur de l'intégrale de convolution si les deux signaux sont causaux ?",
+        "possibilites": [
+            "$\\int_{-\\infty}^{+\\infty} f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int_{0}^{t} f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int_{-\\infty}^{t} f(\\tau)g(t - \\tau) \\, d\\tau$",
+            "$\\int_{0}^{3} f(\\tau)g(t - \\tau) \\, d\\tau$"
+        ],
+        "bonne_reponse": "$\\int_{0}^{t} f(\\tau)g(t - \\tau) \\, d\\tau$"
+    }
+]

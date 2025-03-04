@@ -1,0 +1,202 @@
+[
+    {
+      "enonce": "Quelle est la définition correcte de l'échantillonnage ?",
+      "possibilites": [
+        "Conversion d'un signal discret en continu",
+        "Conversion d'un signal continu en une suite de valeurs discrètes",
+        "Pondération du signal par une fonction sinus",
+        "Filtrage des hautes fréquences"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est l'expression mathématique du peigne de Dirac de période $ T_e $ ?",
+      "possibilites": [
+        "$ P_{T_e}(t) = \\sum_{n} \\delta(t - nT_e) $",
+        "$ P_{T_e}(t) = \\frac{1}{T_e} \\sum_{n} \\delta(t - nT_e) $",
+        "$ P_{T_e}(t) = \\sum_{n} x(nT_e) \\delta(t - nT_e) $",
+        "$ P_{T_e}(t) = e^{-j2\\pi v t} $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Que représente $ X_d(v) $ dans le cas d'un signal échantillonné ?",
+      "possibilites": [
+        "Le spectre du signal continu",
+        "Une périodisation du spectre $ X(v) $ pondérée par $ \\frac{1}{T_e} $",
+        "La transformée de Fourier inverse du peigne de Dirac",
+        "Le spectre filtré passe-bas"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Selon le théorème de Shannon-Nyquist, quelle condition doit respecter $ v_e $ ?",
+      "possibilites": [
+        "$ v_e \\geq B $",
+        "$ v_e \\geq 2B $",
+        "$ v_e \\leq 2B $",
+        "$ v_e = B $"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quel phénomène se produit si $ v_e < 2B $ ?",
+      "possibilites": [
+        "Atténuation du spectre",
+        "Repliement spectral (Aliasing)",
+        "Amplification des basses fréquences",
+        "Périodisation temporelle"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle fonction permet de reconstruire parfaitement un signal échantillonné selon Shannon ?",
+      "possibilites": [
+        "Fonction porte",
+        "Fonction sinus cardinal (sinc)",
+        "Fonction exponentielle",
+        "Fonction échelon"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est la formule de reconstruction du signal $ x(t) $ à partir des échantillons $ x(nT_e) $ ?",
+      "possibilites": [
+        "$ x(t) = \\sum_{n} x(nT_e) e^{-j2\\pi vt} $",
+        "$ x(t) = \\sum_{n} x(nT_e) \\frac{\\sin(\\pi v_e(t - nT_e))}{\\pi v_e(t - nT_e)} $",
+        "$ x(t) = \\frac{1}{T_e} \\sum_{n} X(v - \\frac{n}{T_e}) $",
+        "$ x(t) = x_d(t) * P_{T_e}(t) $"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Dans l'échantillonnage réel, que représente $ \\tau $ dans $ c_n = \\frac{1}{T_e} \\text{sinc}(\\frac{\\pi n\\tau}{T_e}) $ ?",
+      "possibilites": [
+        "La fréquence maximale",
+        "La durée de l'impulsion d'échantillonnage",
+        "La période d'échantillonnage",
+        "Le décalage temporel"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est la fréquence d'échantillonnage usuelle pour un signal audio (bande < 20 kHz) ?",
+      "possibilites": [
+        "8 kHz",
+        "44.1 kHz",
+        "1 kHz",
+        "200 MHz"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle propriété a le spectre d'un signal échantillonné ?",
+      "possibilites": [
+        "Il est non périodique",
+        "Il est périodique de période $ v_e = \\frac{1}{T_e} $",
+        "Il est toujours centré à l'origine",
+        "Il dépend uniquement de $ \\tau $"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est la TF du signal échantillonné $ x_d(t) = x(t) \\cdot P_{T_e}(t) $ ?",
+      "possibilites": [
+        "$ X_d(v) = X(v) * P_{T_e}(v) $",
+        "$ X_d(v) = \\frac{1}{T_e} \\sum_{n} X(v - \\frac{n}{T_e}) $",
+        "$ X_d(v) = X(v) \\cdot P_{T_e}(v) $",
+        "$ X_d(v) = T_e \\sum_{n} X(v - nT_e) $"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quel filtre est utilisé pour reconstruire le signal original après échantillonnage ?",
+      "possibilites": [
+        "Passe-haut",
+        "Passe-bande",
+        "Passe-bas idéal",
+        "Filtre en peigne"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "enonce": "Que se passe-t-il si $ \\tau $ est non négligeable devant $ T_e $ dans l'échantillonnage réel ?",
+      "possibilites": [
+        "Le spectre est parfaitement périodique",
+        "Les replicas sont atténués par un terme en sinc",
+        "Le signal devient continu",
+        "Aliasing disparaît"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle est la fréquence de Nyquist pour un signal de bande 10 kHz ?",
+      "possibilites": [
+        "10 kHz",
+        "20 kHz",
+        "5 kHz",
+        "40 kHz"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle affirmation est fausse concernant l'échantillonnage idéal ?",
+      "possibilites": [
+        "Utilise un peigne de Dirac",
+        "Le spectre est périodique",
+        "Nécessite $ v_e \\geq 2B $",
+        "Ne génère aucune atténuation des replicas"
+      ],
+      "bonne_reponse": 3
+    },
+    {
+      "enonce": "Quelle est la période fréquentielle du spectre d'un signal échantillonné à $ v_e = 8 \\text{ kHz} $ ?",
+      "possibilites": [
+        "4 kHz",
+        "8 kHz",
+        "16 kHz",
+        "2 kHz"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Dans le domaine biomédical (bande < 500 Hz), quelle fréquence d'échantillonnage est utilisée ?",
+      "possibilites": [
+        "1 kHz",
+        "500 Hz",
+        "2 kHz",
+        "250 Hz"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle formule décrit le signal échantillonné avec un peigne de Dirac ?",
+      "possibilites": [
+        "$ x_d(t) = \\sum_{n} x(nT_e) \\delta(t - nT_e) $",
+        "$ x_d(t) = x(t) * P_{T_e}(t) $",
+        "$ x_d(t) = \\frac{1}{T_e} \\sum_{n} X(v - \\frac{n}{T_e}) $",
+        "$ x_d(t) = x(t) \\cdot \\sin(2\\pi B t) $"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "enonce": "Quelle est l'utilité du filtre anti-repliement ?",
+      "possibilites": [
+        "Augmenter la fréquence d'échantillonnage",
+        "Éliminer les fréquences supérieures à $ v_e/2 $",
+        "Pondérer le spectre",
+        "Générer des replicas"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "enonce": "Quelle propriété est vraie pour le spectre d'un signal échantillonné ?",
+      "possibilites": [
+        "Il est continu et apériodique",
+        "Il est discret et périodique",
+        "Il est continu et périodique",
+        "Il est discret et apériodique"
+      ],
+      "bonne_reponse": 2
+    }
+  ]

@@ -297,7 +297,7 @@ def run_qcm() -> None:
                     qcm_data.extend(data["questions"])
                     title = data["metadata"].get("titre", os.path.basename(file_path).replace('.json', ''))
                     aggregated_titles.append(title)
-            qcm_title = f"QCM agrégé ({', '.join(aggregated_titles)})"
+            qcm_title = f"QCM agrégé"
         else:
             data = load_qcm_data(st.session_state["current_qcm"])
             qcm_data = data["questions"]

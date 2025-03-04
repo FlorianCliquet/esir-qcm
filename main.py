@@ -75,11 +75,9 @@ def load_qcm_data(file_path: str) -> Dict[str, Any]:
         questions = []
         
         if isinstance(data, dict):
-            # Nouveau format avec metadata et questions
             metadata = data.get("metadata", {})
             questions = data.get("questions", [])
         elif isinstance(data, list):
-            # Format ancien : liste de questions, vérifier le titre dans la première question
             questions = data
             if questions and isinstance(questions[0], dict) and "titre_qcm" in questions[0]:
                 metadata["titre"] = questions[0].get("titre_qcm", "")

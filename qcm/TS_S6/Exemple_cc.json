@@ -1,0 +1,252 @@
+[
+    {
+        "enonce": "Qu'est-ce qu'une série de Fourier ?",
+        "possibilites": [
+            "Une décomposition d'un signal périodique en sinusoïdes",
+            "Une transformation de Laplace d'un signal",
+            "Une décomposition en ondelettes",
+            "Une méthode de filtrage linéaire"
+        ],
+        "bonne_reponse": 0
+    },
+    {
+        "enonce": "Quelle est la forme générale d'une série de Fourier trigonométrique pour un signal périodique $s(t)$ ?",
+        "possibilites": [
+            "$s(t) = a_0 + \\sum_{n=1}^{\\infty} \\left[ a_n \\cos(n \\omega t) + b_n \\sin(n \\omega t) \\right]$",
+            "$s(t) = \\sum_{n=-\\infty}^{\\infty} c_n e^{i n \\omega t}$",
+            "$s(t) = \\int X(\\nu) e^{i2\\pi \\nu t} d\\nu$",
+            "$s(t) = a_0 + \\sum_{n=1}^{\\infty} \\left[ a_n \\sin(n \\omega t) + b_n \\cos(n \\omega t) \\right]$"
+        ],
+        "bonne_reponse": 0
+    },
+    {
+        "enonce": "Quelle condition de Dirichlet est nécessaire pour la convergence de la série de Fourier d'une fonction $f(t)$ ?",
+        "possibilites": [
+            "$f(t)$ doit être absolument sommable sur une période",
+            "$f(t)$ doit être continue partout",
+            "$f(t)$ doit être périodique et avoir un nombre fini de discontinuités",
+            "$f(t)$ doit être différentiable en tout point"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Si $f(t)$ est une fonction réelle et paire, quelle est la particularité de ses coefficients de Fourier dans la forme exponentielle ?",
+        "possibilites": [
+            "Ils sont tous réels",
+            "Ils sont nuls pour $n$ impair",
+            "Ils sont réels et symétriques, c'est-à-dire $c_{-n} = c_n$",
+            "Ils sont purement imaginaires"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Quelle transformation permet de passer d'une série de Fourier à une transformée de Fourier ?",
+        "possibilites": [
+            "La limite quand la période $T$ tend vers zéro",
+            "La limite quand la période $T$ tend vers l'infini",
+            "Le théorème de Parseval",
+            "La convolution avec une impulsion de Dirac"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Quelle propriété fondamentale de la transformée de Fourier exprime la conservation de l'énergie d'un signal ?",
+        "possibilites": [
+            "La linéarité",
+            "La dualité",
+            "L'inégalité de Schwarz",
+            "L'identité de Parseval"
+        ],
+        "bonne_reponse": 3
+    },
+    {
+        "enonce": "Qu'est-ce qu'une distribution de Dirac ?",
+        "possibilites": [
+            "Une fonction ordinaire continue",
+            "Une fonction de transfert d'un filtre",
+            "Une distribution représentant une impulsion infiniment concentrée de surface unitaire",
+            "La transformée de Fourier d'un signal périodique"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Comment obtient-on la réponse impulsionnelle $h(t)$ d'un système linéaire et invariant dans le temps (LTI) ?",
+        "possibilites": [
+            "En appliquant un échelon unitaire $u(t)$",
+            "En appliquant une impulsion de Dirac $\\delta(t)$",
+            "En appliquant une sinusoïde",
+            "En prenant la dérivée du signal de sortie"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "La convolution de deux signaux est définie par :",
+        "possibilites": [
+            "Le produit de leurs transformées de Fourier",
+            "L'intégrale de la somme de ces signaux",
+            "$\\int x(\\tau) g(t - \\tau) d\\tau$",
+            "La moyenne arithmétique des deux signaux"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Dans le contexte de la convolution, quel est l'élément neutre ?",
+        "possibilites": [
+            "La fonction constante 0",
+            "L'impulsion de Dirac $\\delta(t)$",
+            "L'échelon unitaire $u(t)$",
+            "La sinusoïde de fréquence nulle"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Quelle est la signification de la transformée de Fourier $X(\\nu)$ d'un signal $x(t)$ ?",
+        "possibilites": [
+            "Elle représente l'évolution temporelle du signal",
+            "Elle représente le spectre de fréquences du signal",
+            "Elle est toujours une fonction réelle",
+            "Elle fournit la convolution du signal avec une impulsion"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Quelle propriété est vraie lors de la convolution d'un signal avec une impulsion retardée $\\delta(t - \\tau)$ ?",
+        "possibilites": [
+            "Elle avance le signal de $\\tau$",
+            "Elle retarde le signal de $\\tau$",
+            "Elle inverse le signal",
+            "Elle n'a aucun effet sur le signal"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Dans un espace de Hilbert, qu'est-ce que l'inégalité de Bessel garantit ?",
+        "possibilites": [
+            "La complétude du système orthonormé",
+            "Que la somme des carrés des coefficients de Fourier est inférieure ou égale à la norme au carré du signal",
+            "La convergence uniforme de la série de Fourier",
+            "La conservation de l'énergie lors de la transformation de Fourier"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Quelle est la principale différence entre la convolution et la corrélation d'un signal ?",
+        "possibilites": [
+            "La corrélation implique un retournement d'un des signaux, tandis que la convolution ne le fait pas",
+            "La convolution implique un retournement d'un des signaux, tandis que la corrélation ne le fait pas",
+            "La corrélation est toujours symétrique, contrairement à la convolution",
+            "Il n'y a aucune différence, ce sont des opérations identiques"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Lorsqu'on dérive une distribution $T$, comment se définit sa dérivée $T'$ ?",
+        "possibilites": [
+                "$T'(\\varphi) = T(\\varphi')$",
+                "$T'(\\varphi) = -T(\\varphi')$",
+                "$T'(\\varphi) = T(\\varphi) * \\varphi'$",
+                "$T'(\\varphi) = -\\varphi T(\\varphi')$"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Pour qu'une fonction ait une transformée de Fourier continue qui tend vers 0 à l'infini, quelle propriété doit-elle satisfaire ?",
+        "possibilites": [
+            "Être absolument sommable",
+            "Être infiniment dérivable",
+            "Être périodique",
+            "Être paire"
+        ],
+        "bonne_reponse": 0
+    },
+    {
+        "enonce": "Qu'est-ce que l'inégalité de Schwarz permet d'établir dans un espace vectoriel ?",
+        "possibilites": [
+            "La linéarité du produit scalaire",
+            "Une borne supérieure du produit scalaire en fonction des normes",
+            "La complétude de l'espace",
+            "L'existence d'une base orthonormée"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Dans la décomposition d'un signal carré en série de Fourier, quel rôle jouent les harmoniques impairs ?",
+        "possibilites": [
+            "Ils représentent la composante continue du signal",
+            "Ils n'apportent aucune contribution au signal carré",
+            "Ils constituent l'essentiel de la reconstruction du signal carré",
+            "Ils représentent uniquement la partie symétrique du signal"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Quel théorème garantit que la série de Fourier d'une fonction continue converge uniformément au sens de Césaro ?",
+        "possibilites": [
+            "Le théorème de Dirichlet",
+            "Le théorème de Fejér",
+            "Le théorème de Weierstrass",
+            "Le théorème de Parseval"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Quelle opération mathématique est utilisée pour extraire une composante fréquentielle d'un signal via la transformée de Fourier ?",
+        "possibilites": [
+            "La convolution",
+            "La dérivation",
+            "L'intégration avec une exponentielle complexe",
+            "La multiplication par une impulsion de Dirac"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Quelle est la définition de la convolution d'un signal $x(t)$ avec un signal $g(t)$ ?",
+        "possibilites": [
+                "$h(t) = x(t) * g(t) = \\int x(\\tau) g(t+\\tau) d\\tau$",
+                "$h(t) = x(t) * g(t) = \\int x(t-\\tau) g(\\tau) d\\tau$",
+                "$h(t) = x(t) * g(t) = \\int x(\\tau) g(t-\\tau) d\\tau$",
+            "$h(t) = x(t) * g(t) = x(t) g(t)$"
+        ],
+        "bonne_reponse": 2
+    },
+    {
+        "enonce": "Comment se définit la transformée de Fourier d'une distribution tempérée $T$ ?",
+        "possibilites": [
+                "Par une intégrale classique sur $\\mathbb{R}$",
+            "Par une dualité entre $T$ et l'espace des fonctions test $S$",
+            "Par la série de Fourier de $T$",
+                "Par la convolution de $T$ avec $\\delta(t)$"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Quel est l'effet de la translation temporelle sur la transformée de Fourier d'un signal $x(t)$ ?",
+        "possibilites": [
+                "Elle multiplie $X(\\nu)$ par $e^{+2i\\pi \\nu t_0}$",
+                "Elle multiplie $X(\\nu)$ par $e^{-2i\\pi \\nu t_0}$",
+            "Elle décale $X(\\nu)$ de $t_0$",
+            "Elle ne modifie pas $X(\\nu)$"
+        ],
+        "bonne_reponse": 1
+    },
+    {
+        "enonce": "Dans la décomposition en série de Fourier, que représente le coefficient $a_0$ ?",
+        "possibilites": [
+            "La moyenne du signal sur une période",
+            "L'amplitude maximale du signal",
+            "La fréquence fondamentale",
+            "La phase du signal"
+        ],
+        "bonne_reponse": 0
+    },
+    {
+        "enonce": "Quel est le résultat de la convolution d'un signal $x(t)$ avec une impulsion de Dirac $\\delta(t - t_0)$ ?",
+        "possibilites": [
+            "$x(t)$ retardé de $t_0$",
+            "$x(t)$ avancé de $t_0$",
+            "$x(t)$ inversé",
+            "$x(t)$ multiplié par $t_0$"
+        ],
+        "bonne_reponse": 0
+    }
+]

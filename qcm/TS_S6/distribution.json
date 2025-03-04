@@ -1,202 +1,202 @@
 [
-    {
-      "enonce": "Quelle est la définition de la distribution de Dirac δ(t) comme limite d'une impulsion rectangulaire ?",
-      "possibilites": [
-        "δ(t) = lim_{ε→0} (1/ε) rect_ε(t)",
-        "δ(t) = lim_{ε→0} ε rect_ε(t)",
-        "δ(t) = ∫_{-∞}^{+∞} rect_ε(t) dt",
-        "δ(t) = lim_{ε→0} rect_ε(t)"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Que vaut l'intégrale ∫_{-∞}^{+∞} s(t)δ(t - t₀) dt si s(t) est continue en t₀ ?",
-      "possibilites": [
-        "s(t₀)",
-        "0",
-        "1",
-        "s(0)"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Quelle propriété fondamentale possède δ(t) pour la convolution ?",
-      "possibilites": [
-        "Élément neutre : x(t) * δ(t) = x(t)",
-        "Élément absorbant : x(t) * δ(t) = 0",
-        "Décalage temporel : x(t) * δ(t - a) = x(t - a)",
-        "Toutes ces réponses"
-      ],
-      "bonne_reponse": 3
-    },
-    {
-      "enonce": "Quelle est la dérivée au sens des distributions de l'échelon unité U(t) ?",
-      "possibilites": [
-        "δ(t)",
-        "0",
-        "U'(t) = rect(t)",
-        "δ'(t)"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Comment est définie une distribution tempérée ?",
-      "possibilites": [
-        "Une fonctionnelle linéaire continue sur l'espace S",
-        "Une fonction localement sommable",
-        "Une fonction C^∞ à support compact",
-        "Une suite convergente de fonctions"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Que vaut ⟨δ^{(n)}, φ⟩ pour φ ∈ S ?",
-      "possibilites": [
-        "(-1)^n φ^{(n)}(0)",
-        "φ^{(n)}(0)",
-        "0",
-        "φ(0)"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Quelle opération définit la valeur principale vp(1/x) ?",
-      "possibilites": [
-        "lim_{ε→0} ∫_{|x|>ε} φ(x)/x dx",
-        "∫_{-∞}^{+∞} φ(x)/x dx",
-        "lim_{ε→0} φ(ε)/ε",
-        "Aucune de ces réponses"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Si T_n → T au sens des distributions, que peut-on dire de T_n' ?",
-      "possibilites": [
-        "T_n' → T'",
-        "T_n' diverge",
-        "T_n' → 0",
-        "T_n' = T'"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Que vaut lim_{A→∞} A f(At) si ∫_{-∞}^{+∞} f(x)dx = 1 ?",
-      "possibilites": [
-        "δ(t)",
-        "0",
-        "f(t)",
-        "1"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Comment est défini le produit αT d'une distribution T par une fonction α ∈ C^∞ à croissance lente ?",
-      "possibilites": [
-        "⟨αT, φ⟩ = ⟨T, αφ⟩",
-        "⟨αT, φ⟩ = α⟨T, φ⟩",
-        "⟨αT, φ⟩ = ⟨T, α⟩⟨T, φ⟩",
-        "Produit non défini"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Que vaut (αT)' pour α ∈ C^∞ et T une distribution ?",
-      "possibilites": [
-        "α'T + αT'",
-        "αT'",
-        "α'T'",
-        "0"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Quelle est la décomposition en série de Fourier du peigne de Dirac de période T ?",
-      "possibilites": [
-        "∑_{n} δ(t - nT) = (1/T) ∑_{m} e^{2πimt/T}",
-        "∑_{n} δ(t - nT) = ∑_{m} e^{imt}",
-        "∑_{n} δ(t - nT) = T ∑_{m} δ(t - m/T)",
-        "Aucune de ces réponses"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Si f(t) a un saut σ₀ en t=0, que vaut f' au sens des distributions ?",
-      "possibilites": [
-        "f_c' + σ₀ δ(t)",
-        "f_c'",
-        "σ₀ δ(t)",
-        "f_c' - σ₀ δ(t)"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Que représente S dans la définition des distributions tempérées ?",
-      "possibilites": [
-        "Fonctions C^∞ à décroissance rapide",
-        "Fonctions sommables",
-        "Fonctions à support compact",
-        "Fonctions périodiques"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Quelle est la représentation graphique de aδ(t - t₀) ?",
-      "possibilites": [
-        "Flèche verticale en t₀ de hauteur a",
-        "Pic triangulaire en t₀",
-        "Impulsion rectangulaire centrée en t₀",
-        "Aucune représentation graphique"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Que vaut ∫_{-∞}^{+∞} δ'(t) φ(t) dt ?",
-      "possibilites": [
-        "-φ'(0)",
-        "φ'(0)",
-        "φ(0)",
-        "0"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Quelle propriété vérifie une suite T_n convergeant faiblement vers T ?",
-      "possibilites": [
-        "⟨T_n, φ⟩ → ⟨T, φ⟩ ∀φ ∈ S",
-        "T_n(t) → T(t) ∀t",
-        "Supp(T_n) ⊂ Supp(T)",
-        "T_n est C^∞"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Que vaut ∑_{n ∈ ℤ} δ(t - 2nπ) en série de Fourier ?",
-      "possibilites": [
-        "(1/(2π)) ∑_{m ∈ ℤ} e^{imt}",
-        "∑_{m ∈ ℤ} e^{imt}",
-        "2π ∑_{m ∈ ℤ} δ(t - m)",
-        "Aucune de ces réponses"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Si T est une distribution, comment est défini son retournement T^∨ ?",
-      "possibilites": [
-        "⟨T^∨, φ⟩ = ⟨T, φ(-t)⟩",
-        "⟨T^∨, φ⟩ = -⟨T, φ(t)⟩",
-        "⟨T^∨, φ⟩ = ⟨T, φ(1/t)⟩",
-        "Retournement non défini"
-      ],
-      "bonne_reponse": 0
-    },
-    {
-      "enonce": "Quelle est la dérivée troisième de δ(t) appliquée à φ(t) ?",
-      "possibilites": [
-        "(-1)^3 φ'''(0)",
-        "φ'''(0)",
-        "0",
-        "φ(0)"
-      ],
-      "bonne_reponse": 0
-    }
-  ]
+  {
+    "enonce": "Quelle est la définition de la distribution de Dirac $\\delta(t)$ comme limite d'une impulsion rectangulaire ?",
+    "possibilites": [
+      "$\\delta(t) = \\lim_{\\varepsilon\\to 0} \\frac{1}{\\varepsilon} \\operatorname{rect}_{\\varepsilon}(t)$",
+      "$\\delta(t) = \\lim_{\\varepsilon\\to 0} \\varepsilon \\operatorname{rect}_{\\varepsilon}(t)$",
+      "$\\delta(t) = \\int_{-\\infty}^{+\\infty} \\operatorname{rect}_{\\varepsilon}(t) dt$",
+      "$\\delta(t) = \\lim_{\\varepsilon\\to 0} \\operatorname{rect}_{\\varepsilon}(t)$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Que vaut l'intégrale $\\int_{-\\infty}^{+\\infty} s(t)\\delta(t - t_0) dt$ si $s(t)$ est continue en $t_0$ ?",
+    "possibilites": [
+      "$s(t_0)$",
+      "$0$",
+      "$1$",
+      "$s(0)$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Quelle propriété fondamentale possède $\\delta(t)$ pour la convolution ?",
+    "possibilites": [
+      "Élément neutre : $x(t) * \\delta(t) = x(t)$",
+      "Élément absorbant : $x(t) * \\delta(t) = 0$",
+      "Décalage temporel : $x(t) * \\delta(t - a) = x(t - a)$",
+      "Toutes ces réponses"
+    ],
+    "bonne_reponse": 3
+  },
+  {
+    "enonce": "Quelle est la dérivée au sens des distributions de l'échelon unité $U(t)$ ?",
+    "possibilites": [
+      "$\\delta(t)$",
+      "$0$",
+      "$U'(t) = \\operatorname{rect}(t)$",
+      "$\\delta'(t)$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Comment est définie une distribution tempérée ?",
+    "possibilites": [
+      "Une fonctionnelle linéaire continue sur l'espace $S$",
+      "Une fonction localement sommable",
+      "Une fonction $C^\\infty$ à support compact",
+      "Une suite convergente de fonctions"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Que vaut $\\langle\\delta^{(n)}, \\varphi\\rangle$ pour $\\varphi \\in S$ ?",
+    "possibilites": [
+      "$(-1)^n \\varphi^{(n)}(0)$",
+      "$\\varphi^{(n)}(0)$",
+      "$0$",
+      "$\\varphi(0)$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Quelle opération définit la valeur principale $\\operatorname{vp}(1/x)$ ?",
+    "possibilites": [
+      "$\\lim_{\\varepsilon\\to 0} \\int_{|x|>\\varepsilon} \\frac{\\varphi(x)}{x} dx$",
+      "$\\int_{-\\infty}^{+\\infty} \\frac{\\varphi(x)}{x} dx$",
+      "$\\lim_{\\varepsilon\\to 0} \\frac{\\varphi(\\varepsilon)}{\\varepsilon}$",
+      "Aucune de ces réponses"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Si $T_n \\to T$ au sens des distributions, que peut-on dire de $T_n'$ ?",
+    "possibilites": [
+      "$T_n' \\to T'$",
+      "$T_n'$ diverge",
+      "$T_n' \\to 0$",
+      "$T_n' = T'$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Que vaut $\\lim_{A\\to\\infty} A f(At)$ si $\\int_{-\\infty}^{+\\infty} f(x)dx = 1$ ?",
+    "possibilites": [
+      "$\\delta(t)$",
+      "$0$",
+      "$f(t)$",
+      "$1$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Comment est défini le produit $\\alpha T$ d'une distribution $T$ par une fonction $\\alpha \\in C^\\infty$ à croissance lente ?",
+    "possibilites": [
+      "$\\langle\\alpha T, \\varphi\\rangle = \\langle T, \\alpha \\varphi\\rangle$",
+      "$\\langle\\alpha T, \\varphi\\rangle = \\alpha\\langle T, \\varphi\\rangle$",
+      "$\\langle\\alpha T, \\varphi\\rangle = \\langle T, \\alpha\\rangle\\langle T, \\varphi\\rangle$",
+      "Produit non défini"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Que vaut $(\\alpha T)'$ pour $\\alpha \\in C^\\infty$ et $T$ une distribution ?",
+    "possibilites": [
+      "$\\alpha' T + \\alpha T'$",
+      "$\\alpha T'$",
+      "$\\alpha' T'$",
+      "$0$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Quelle est la décomposition en série de Fourier du peigne de Dirac de période $T$ ?",
+    "possibilites": [
+      "$\\sum_{n} \\delta(t - nT) = \\frac{1}{T} \\sum_{m} e^{2\\pi imt/T}$",
+      "$\\sum_{n} \\delta(t - nT) = \\sum_{m} e^{imt}$",
+      "$\\sum_{n} \\delta(t - nT) = T \\sum_{m} \\delta(t - m/T)$",
+      "Aucune de ces réponses"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Si $f(t)$ a un saut $\\sigma_0$ en $t=0$, que vaut $f'$ au sens des distributions ?",
+    "possibilites": [
+      "$f_c' + \\sigma_0 \\delta(t)$",
+      "$f_c'$",
+      "$\\sigma_0 \\delta(t)$",
+      "$f_c' - \\sigma_0 \\delta(t)$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Que représente $S$ dans la définition des distributions tempérées ?",
+    "possibilites": [
+      "Fonctions $C^\\infty$ à décroissance rapide",
+      "Fonctions sommables",
+      "Fonctions à support compact",
+      "Fonctions périodiques"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Quelle est la représentation graphique de $a\\delta(t - t_0)$ ?",
+    "possibilites": [
+      "Flèche verticale en $t_0$ de hauteur $a$",
+      "Pic triangulaire en $t_0$",
+      "Impulsion rectangulaire centrée en $t_0$",
+      "Aucune représentation graphique"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Que vaut $\\int_{-\\infty}^{+\\infty} \\delta'(t) \\varphi(t) dt$ ?",
+    "possibilites": [
+      "$-\\varphi'(0)$",
+      "$\\varphi'(0)$",
+      "$\\varphi(0)$",
+      "$0$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Quelle propriété vérifie une suite $T_n$ convergeant faiblement vers $T$ ?",
+    "possibilites": [
+      "$\\langle T_n, \\varphi \\rangle \\to \\langle T, \\varphi \\rangle, \\forall \\varphi \\in S$",
+      "$T_n(t) \\to T(t), \\forall t$",
+      "$\\operatorname{Supp}(T_n) \\subset \\operatorname{Supp}(T)$",
+      "$T_n$ est $C^\\infty$"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Que vaut $\\sum_{n \\in \\mathbb{Z}} \\delta(t - 2n\\pi)$ en série de Fourier ?",
+    "possibilites": [
+      "$\\frac{1}{2\\pi} \\sum_{m \\in \\mathbb{Z}} e^{imt}$",
+      "$\\sum_{m \\in \\mathbb{Z}} e^{imt}$",
+      "$2\\pi \\sum_{m \\in \\mathbb{Z}} \\delta(t - m)$",
+      "Aucune de ces réponses"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Si $T$ est une distribution, comment est défini son retournement $T^\\vee$ ?",
+    "possibilites": [
+      "$\\langle T^\\vee, \\varphi \\rangle = \\langle T, \\varphi(-t) \\rangle$",
+      "$\\langle T^\\vee, \\varphi \\rangle = -\\langle T, \\varphi(t) \\rangle$",
+      "$\\langle T^\\vee, \\varphi \\rangle = \\langle T, \\varphi(1/t) \\rangle$",
+      "Retournement non défini"
+    ],
+    "bonne_reponse": 0
+  },
+  {
+    "enonce": "Quelle est la dérivée troisième de $\\delta(t)$ appliquée à $\\varphi(t)$ ?",
+    "possibilites": [
+      "$(-1)^3 \\varphi'''(0)$",
+      "$\\varphi'''(0)$",
+      "$0$",
+      "$\\varphi(0)$"
+    ],
+    "bonne_reponse": 0
+  }
+]

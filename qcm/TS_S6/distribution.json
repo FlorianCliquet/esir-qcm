@@ -25,7 +25,7 @@
       "Élément neutre : $x(t) * \\delta(t) = x(t)$",
       "Élément absorbant : $x(t) * \\delta(t) = 0$",
       "Décalage temporel : $x(t) * \\delta(t - a) = x(t - a)$",
-      "Toutes ces réponses"
+      "Élément neutre et Décalage temporel"
     ],
     "bonne_reponse": 3
   },

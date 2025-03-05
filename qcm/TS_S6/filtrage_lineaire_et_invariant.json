@@ -7,7 +7,7 @@
             "C) Linéarité et invariance temporelle",
             "D) Aucune des réponses ci-dessus"
         ],
-        "bonne_reponse": 3
+        "bonne_reponse": 2
     },
     {
         "enonce": "La réponse impulsionnelle $ h(t) $ d'un filtre est obtenue en appliquant :",
@@ -17,7 +17,7 @@
             "C) Un signal sinusoïdal",
             "D) Un signal carré"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "Dans le domaine fréquentiel, la sortie $ Y(\\nu) $ d'un filtre LTI s'exprime par :",
@@ -27,7 +27,7 @@
             "C) $ Y(\\nu) = H(\\nu) / X(\\nu) $",
             "D) $ Y(\\nu) = X(\\nu) * H(\\nu) $"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "À la fréquence $ \\nu = 0 $, une inductance $ L $ se comporte comme :",
@@ -37,7 +37,7 @@
             "C) Une résistance $ R = L $",
             "D) Aucune des réponses ci-dessus"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "Pour un signal carré de période $ T $ et rapport cyclique 50%, le coefficient $ c_0 $ de Fourier vaut :",
@@ -47,7 +47,7 @@
             "C) $ 0 $",
             "D) $ V_{10}/4 $"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "La fonction de transfert $ H(\\nu) $ d'un filtre représente :",
@@ -57,7 +57,7 @@
             "C) Le gain complexe en fréquence",
             "D) La réponse impulsionnelle"
         ],
-        "bonne_reponse": 3
+        "bonne_reponse": 2
     },
     {
         "enonce": "Si $ h(t) $ est la réponse impulsionnelle d'un filtre, la sortie $ y(t) $ s'obtient par :",
@@ -67,7 +67,7 @@
             "C) $ y(t) = h(t) * x(t) $",
             "D) $ y(t) = h(t) / x(t) $"
         ],
-        "bonne_reponse": 3
+        "bonne_reponse": 2
     },
     {
         "enonce": "Un filtre passe-bas atténue principalement :",
@@ -77,7 +77,7 @@
             "C) Toutes les fréquences",
             "D) Aucune fréquence"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "L'impédance d'une capacité $ C $ à la fréquence $ \\nu $ est :",
@@ -87,7 +87,7 @@
             "C) $ Z_C = C\\omega $",
             "D) $ Z_C = \\frac{1}{C\\omega} $"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "Pour $ \\nu = 1/T $, où $ T = 20\\ \\mu s $, la fréquence correspondante est :",
@@ -97,7 +97,7 @@
             "C) 100 kHz",
             "D) 5 kHz"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "La linéarité d'un filtre implique que :",
@@ -107,7 +107,7 @@
             "C) La réponse ne dépend pas du temps",
             "D) Aucune des réponses ci-dessus"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "Si $ H(50\\ kHz) = 0.5 $, une composante d'entrée $ c_n = 10 $ à cette fréquence donne en sortie :",
@@ -117,7 +117,7 @@
             "C) 20",
             "D) 0"
         ],
-        "bonne_reponse": 1
+        "bonne_reponse": 0
     },
     {
         "enonce": "La transformée de Fourier de la réponse impulsionnelle $ h(t) $ est :",
@@ -127,7 +127,7 @@
             "C) Le spectre du signal d'entrée",
             "D) Aucune des réponses ci-dessus"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "Dans un filtre RLC série, à la résonance, l'impédance totale est :",
@@ -137,7 +137,7 @@
             "C) Nulle",
             "D) Infinite"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "Le module de $ H(\\nu) $ représente :",
@@ -147,7 +147,7 @@
             "C) La réponse impulsionnelle",
             "D) La linéarité"
         ],
-        "bonne_reponse": 2
+        "bonne_reponse": 1
     },
     {
         "enonce": "Un signal $ x(t) = \\delta(t - 5) $ traverse un filtre LTI de réponse $ h(t) $. La sortie est :",
@@ -157,7 +157,7 @@
             "C) $ h(t + 5) $",
             "D) $ h(5) $"
         ],
-        "bonne_reponse": 1
+        "bonne_reponse": 0
     },
     {
         "enonce": "Pour un filtre passe-haut, les composantes continues ($ \\nu = 0 $) sont :",
@@ -167,7 +167,7 @@
             "C) Supprimées",
             "D) Aucune des réponses ci-dessus"
         ],
-        "bonne_reponse": 3
+        "bonne_reponse": 2
     },
     {
         "enonce": "Le coefficient $ c_1 $ de Fourier d'un signal carré de période $ T $ avec $ V_{10} = 20 $ est :",
@@ -177,7 +177,7 @@
             "C) $ \\frac{20}{\\pi^2} $",
             "D) $ 0 $"
         ],
-        "bonne_reponse": 1
+        "bonne_reponse": 0
     },
     {
         "enonce": "Si $ H(\\nu) = 0 $ à une fréquence donnée, la composante correspondante en sortie est :",
@@ -187,7 +187,7 @@
             "C) Supprimée",
             "D) Aucune des réponses ci-dessus"
         ],
-        "bonne_reponse": 3
+        "bonne_reponse": 2
     },
     {
         "enonce": "Un filtre invariant dans le temps vérifie :",
@@ -197,6 +197,6 @@
             "C) La réponse dépend de l'instant d'application",
             "D) Aucune des réponses ci-dessus"
         ],
-        "bonne_reponse": 1
+        "bonne_reponse": 0
     }
 ]

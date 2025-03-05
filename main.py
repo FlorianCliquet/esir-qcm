@@ -156,21 +156,27 @@ def reset_qcm_state() -> None:
 
 
 def display_question(question: Dict[str, Any]) -> Union[str, None]:
-    """
-    Affiche la question en cours et retourne la sélection de l'utilisateur.
-    """
     current_index = st.session_state["question_index"]
     radio_key = f"radio_{current_index}"
+    shuffled_key = f"shuffled_{radio_key}"
     
+    # Generate a shuffled copy if not already done for this question
+    if shuffled_key not in st.session_state:
+        options = question["possibilites"][:]  # copy original list
+        random.shuffle(options)
+        st.session_state[shuffled_key] = options
+    else:
+        options = st.session_state[shuffled_key]
+
     if radio_key not in st.session_state:
-        st.session_state[radio_key] = question["possibilites"][0]
+        st.session_state[radio_key] = options[0]
 
     st.markdown(f"### Question {current_index + 1}")
     st.write(question["enonce"])
     
     user_choice = st.radio(
         "Sélectionnez votre réponse :",
-        question["possibilites"],
+        options,
         index=0,
         key=radio_key
     )
@@ -181,15 +187,15 @@ def display_question(question: Dict[str, Any]) -> Union[str, None]:
 def check_answer(question: Dict[str, Any], user_choice: str) -> bool:
     """
     Vérifie si la réponse sélectionnée est correcte.
-    
-    Si 'bonne_reponse' est un entier, il est traité comme un index ;
-    s'il s'agit d'une chaîne, une comparaison directe est effectuée.
+    Pour un 'bonne_reponse' sous forme d'entier, on compare le texte de l'option sélectionnée
+    avec celui de l'option correcte issue de la liste d'origine.
     """
     try:
         correct = question["bonne_reponse"]
         if isinstance(correct, int):
-            choice_index = question["possibilites"].index(user_choice)
-            return choice_index == correct
+            # Obtenir le texte de la bonne réponse à partir de la liste d'origine
+            correct_answer = question["possibilites"][correct]
+            return user_choice.strip() == correct_answer.strip()
         elif isinstance(correct, str):
             return user_choice.strip() == correct.strip()
         else:

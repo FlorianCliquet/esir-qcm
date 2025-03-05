@@ -154,6 +154,13 @@ def reset_qcm_state() -> None:
     st.session_state["error_message"] = ""
     st.session_state["qcm_data"] = None 
 
+    keys_to_remove = [
+        key for key in st.session_state.keys()
+        if key.startswith("radio_") or key.startswith("shuffled_radio_")
+    ]
+    for key in keys_to_remove:
+        del st.session_state[key]
+
 
 def display_question(question: Dict[str, Any]) -> Union[str, None]:
     current_index = st.session_state["question_index"]
